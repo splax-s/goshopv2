@@ -17,10 +17,16 @@ jobs:
 
     steps:
       - uses: actions/checkout@v4
-      - name: Setup Go ${{ matrix.go-version }}
+      - name: Setup Go
         uses: actions/setup-go@v4
         with:
-            go_version: ${{ matrix.go-version }}
+          go-version: '1.21.x'
+      - name: Install dependencies
+        run: go get .
+      - name: Build
+        run: go build -v ./...
+      - name: Test with the Go CLI
+        run: go test
       - run: go get .
       - run: go build -v ./...
       - run: go run main.go
