@@ -1,0 +1,5 @@
+faker
+faker_commerce
+bson
+stripe
+pymongo

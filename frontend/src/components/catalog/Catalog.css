@@ -1,0 +1,39 @@
+.catalog {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    padding: 30px;
+    justify-content: center;
+}
+
+img {
+    width: 100%;
+}
+
+.product-catalog {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 10px;
+    order: 2;
+    max-width: 900px;
+}
+
+.show-more {
+    width: 100%;
+    background-color: #e8e8e8;
+    color: black;
+    border-radius: 0;
+    margin-bottom: 30px;
+    height: 50px;
+}
+
+.show-more:hover {
+    background-color: #dcdcdc;
+}
+
+.pagination-container {
+    width: 100%;
+    margin-bottom: 100px;
+    justify-content: center;
+    display: flex;
+}
